@@ -69,7 +69,6 @@ TARGET_GLOBAL_CFLAGS += -mfloat-abi=softfp -mfpu=neon-vfpv4 -mtune=cortex-a5
 TARGET_GLOBAL_CPPFLAGS += -mfloat-abi=softfp -mfpu=neon-vfpv4 -mtune=cortex-a5
 
 # Audio
-TARGET_PROVIDES_LIBAUDIO := true
 BOARD_USES_LEGACY_ALSA_AUDIO := true
 
 # Bluetooth
@@ -77,9 +76,6 @@ BOARD_HAVE_BLUETOOTH := true
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-
-# FM
-AUDIO_FEATURE_ENABLED_FM := true
 
 # GPS
 BOARD_USES_QCOM_GPS := true

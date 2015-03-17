@@ -64,14 +64,7 @@ PRODUCT_PACKAGES += \
     hwmac \
     make_ext4fs \
     setup_fs
-
-# FM Radio
-PRODUCT_PACKAGES += \
-    FM2 \
-    FMRecord \
-    libqcomfm_jni \
-    qcom.fmradio
-
+    
 #wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
@@ -99,9 +92,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     device/huawei/msm7x27a-common/configs/audio_policy.conf:system/etc/audio_policy.conf \
     device/huawei/msm7x27a-common/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    device/huawei/msm7x27a-common/configs/media_profiles.xml:system/etc/media_profiles.xml \
-    device/huawei/msm7x27a-common/configs/init.qcom.fm.sh:system/etc/init.qcom.fm.sh \
-
+    device/huawei/msm7x27a-common/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 PRODUCT_COPY_FILES += \
     device/huawei/msm7x27a-common/idc/qwerty.idc:system/usr/idc/qwerty.idc \
@@ -180,12 +171,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.gapless.playback.disable=true \
     ro.sys.fw.bg_apps_limit=16 \
     ro.config.max_starting_bg=8
-
-# FM Radio
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.fm.analogpath.supported=false \
-    ro.fm.transmitter=false \
-    ro.fm.mulinst.recording.support=false
 
 # Stagefright
 PRODUCT_PROPERTY_OVERRIDES += \
